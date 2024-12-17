@@ -1,0 +1,23 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js --exit",
+    "test1": "./node_modules/.bin/cucumber-js --publish --format json:./cucumber-report.json && node generate-report.js"
+
+  },
+  "author": "LambdaTest Inc.",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "assert": "^2.0.0",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.35.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^6.0.0",
+    "multiple-cucumber-html-reporter": "^3.8.0"
+  }
+}
